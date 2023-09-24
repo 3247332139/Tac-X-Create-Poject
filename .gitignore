@@ -1,1 +1,17 @@
 
+/.gitignore
+/build.gradle
+/changelog.txt
+/CREDITS.txt
+/gradle.properties
+/gradlew
+/gradlew.bat
+/LICENSE.md
+/LICENSE.txt
+/README.md
+/README.txt
+/src/
+/.gradle/
+/.idea/
+/build/
+/gradle/
