@@ -67,5 +67,6 @@ onEvent('item.registry', event => {
 
   event.create('incomplete_ak47_item').displayName('incomplete ak47')
 
+  event.create('bullet_materials').displayName('Bullet materials')
 })
 
