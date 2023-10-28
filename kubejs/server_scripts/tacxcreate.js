@@ -29,133 +29,6 @@ onEvent('recipes', event => {
     event.recipes.createCompacting('kubejs:incomplete_50bmg_item', ['20x #forge:ingots/iron', '#forge:rods/blaze','2x #forge:gems/diamond','2x #forge:ingots/gold']).heated(),
     
     event.recipes.createMixing('tac:10_gauge_round', ['18x #forge:nuggets/iron', '3x #forge:ingots/iron', '3x #forge:gunpowder']),
-        
-    event.shaped('kubejs:incomplete_556x45_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:nato_556_bullet'
-    })
-    event.shaped('kubejs:incomplete_68x51fury_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:bullet68'
-    })
-    event.shaped('kubejs:incomplete_762x39_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/iron',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:762x39'
-    })
-    event.shaped('kubejs:incomplete_762x54_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:762x54'
-    })
-    event.shaped('kubejs:incomplete_58x42_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/iron',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:58x42'
-    })
-    event.shaped('kubejs:incomplete_308_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:plates/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:bullet_308'
-    })
-    event.shaped('kubejs:incomplete_338_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:ingots/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:lapua338'
-    })
-    event.shaped('kubejs:incomplete_30_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:ingots/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:win_30-30'
-    })
-    event.shaped('kubejs:incomplete_338_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:ingots/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:lapua338'
-    })
-    event.shaped('kubejs:incomplete_9mm_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:nuggets/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:9mm_round'
-    })
-    event.shaped('kubejs:incomplete_45acp_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:nuggets/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:round45'
-    })
-    event.shaped('kubejs:incomplete_46x30_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:nuggets/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:46x30'
-    })
-    event.shaped('kubejs:incomplete_762x25_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:nuggets/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:762x25'
-    })
-    event.shaped('kubejs:incomplete_46x30_item', [
-        '   ',
-        'aba',
-        'aca'
-      ], {
-        'a': '#forge:nuggets/brass',
-        'b': '#forge:dusts/blaze',
-        'c': 'tac:46x30'
-    })
     
     event.recipes.createSequencedAssembly(
     [
@@ -327,5 +200,39 @@ onEvent('recipes', event => {
         event.recipes.createDeploying('kubejs:incomplete_50bmg', ['kubejs:incomplete_50bmg', '#forge:nuggets/gold']),
         event.recipes.createPressing('kubejs:incomplete_50bmg', 'kubejs:incomplete_50bmg')
     ]
-    ).transitionalItem('kubejs:incomplete_50bmg').loops(2)
+        ).transitionalItem('kubejs:incomplete_50bmg').loops(2),
+    
+        event.stonecutting('kubejs:incomplete_556x45_item', 'kubejs:bullet_materials'),
+        
+        event.stonecutting('kubejs:incomplete_68x51fury_item','kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_762x39_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_762x54_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_58x42_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_308_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_338_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_30_item', 'kubejs:bullet_materials'),
+        
+        event.stonecutting('kubejs:incomplete_9mm_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_45acp_item', 'kubejs:bullet_materials'),
+
+        event.stonecutting('kubejs:incomplete_46x30_item', 'kubejs:bullet_materials'),
+
+        event.shaped('kubejs:bullet_materials', [
+        '   ',
+        'abd',
+        'acd'
+      ], {
+        'a': '#forge:ingots/brass',
+        'b': '#forge:plates/brass',
+        'c': '#forge:plates/iron',
+        'd': '#forge:ingots/iron'
+        
+    })
 })
