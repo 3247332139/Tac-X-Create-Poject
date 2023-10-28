@@ -26,5 +26,6 @@
     "item.kubejs.incomplete_338": ".338 Lapua 狙击子弹(半成品）",
     "item.kubejs.incomplete_338_item": ".338 Lapua 狙击子弹 原料",
     "item.kubejs.incomplete_762x39": "7.62x39mm 步枪子弹(半成品）",
-    "item.kubejs.incomplete_762x39_item": "7.62x39mm 步枪子弹 原料"
+    "item.kubejs.incomplete_762x39_item": "7.62x39mm 步枪子弹 原料",
+    "item.kubejs.bullet_materials": "子弹原料"
 }
